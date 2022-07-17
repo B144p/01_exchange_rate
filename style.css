@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Montserrat:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+body{
+    background-color: #f4f4f4;
+    display: flex;                   /* จัด element ในนั้นให้อยู่ในแนวนอน */
+    flex-direction: column;
+    align-items: center;             /* จัดกึ่งกลางในแนวแกน x */
+    justify-content: center;         /* คาดว่า => จัดกึ่งกลางในแนวแกน y */
+    height: 100vh;
+    margin: 0px;
+    /* padding: 20px; */
+}
+.btn{
+    color: #fff;
+    background-color: orange;
+    cursor: pointer;                /* นำ cursor ไปชี้แล้วเป็นรูปมือชี้ */
+    border-radius: 5px;             /* ขอบมน */
+    font-size: 12px;
+    padding: 5px 12px;
+}
+.money-img{
+    width: 250px;
+}
+.currency{
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.currency select{
+    padding: 10px 20px 10px 10px;
+    /* padding: 10px 20px; */
+    border: 1px solid #dedede;
+    font-size: 16px;
+    background: transparent;
+    appearance: none;
+}
+.currency input{
+    border: 0;
+    background: transparent;
+    font-size: 26px;
+    text-align: right;
+}
+.swab-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    /* create space between item */
+    /* padding: 0 50px; */
+}
+.rate{
+    font-size: 20px;
+    padding: 0 10px;
+}
+select:focus , input:focus , button:focus {
+    outline: 0;
+}
